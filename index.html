@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="de">
@@ -425,13 +424,13 @@ h1 { font-size: 2rem; }
 
 <div class="nav-wrap">
   <div class="nav-tabs">
-    <button class="tab-btn korean active" onclick="showTab('korean', this)">
+    <button class="tab-btn korean active" data-tab="korean">
       <span class="tab-emoji">🇰🇷</span> Koreanisch
     </button>
-    <button class="tab-btn japanese" onclick="showTab('japanese', this)">
+    <button class="tab-btn japanese" data-tab="japanese">
       <span class="tab-emoji">🇯🇵</span> Japanisch
     </button>
-    <button class="tab-btn brotbox" onclick="showTab('brotbox', this)">
+    <button class="tab-btn brotbox" data-tab="brotbox">
       <span class="tab-emoji">🥡</span> Brotbox
     </button>
   </div>
@@ -493,7 +492,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Reste-Gericht! Verwende beliebiges Gemüse aus dem Kühlschrank. Für extra Protein einfach mehr Ei oder etwas Tofu ergänzen.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -537,7 +536,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Doenjang gibt es in asiatischen Supermärkten. Alternativ funktioniert japanische Miso-Paste – Ergebnis leicht milder, aber genauso lecker.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -581,7 +580,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Reste-Reis aus dem Kühlschrank funktioniert am besten – frischer Reis macht den Fried Rice matschig. Kimchi gibt es im Asia-Laden oder du fermentierst Weißkohl selbst!</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -627,7 +626,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Japchae schmeckt warm und kalt – perfekt auch für die Brotbox! Dangmyeon gibt es im Asiamarkt, alternativ Mung-Bohnen-Nudeln verwenden.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -672,7 +671,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Traditionell in einem kleinen Tonpott serviert. Zu Hause funktioniert jeder kleine Topf. Schärfe ganz nach Geschmack – weniger Gochugaru für eine milde Version.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -714,7 +713,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Meal-Prep:</strong> Hält 3 Tage im Kühlschrank – am besten gleich eine große Portion machen und als Beilage zu Reis oder in die Brotbox packen.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -757,7 +756,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Für extra Knusprigkeit: Teig mit eiskaltem Wasser anrühren. Optional Kimchi, Paprika oder TK-Garnelen in den Teig einarbeiten.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -801,7 +800,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Wichtig:</strong> Deckel in den ersten 8 Minuten nicht öffnen – sonst werden die Sprossen unangenehm fischig. Danke an die Koreanische Küchenweisheit! 🙏</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -845,7 +844,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Je trockener der Tofu vor dem Braten, desto knuspriger wird er. Ruhig 15–30 Min. zwischen Küchentüchern pressen. Auch kalt als Banchan (Beilage) oder in der Brotbox super.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -887,7 +886,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Wissenswertes:</strong> In Korea isst man diese Suppe traditionell am Geburtstag als Dank an die Mutter. Wakame gibt es getrocknet günstig im Asialaden – eine Packung reicht Monate.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -931,7 +930,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Als schnelle Banchan (Beilage) zu jedem Reisgerichte. Die Gurke vorher salzen und ausdrücken ist der Schlüssel – sonst wässert der Salat.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -975,7 +974,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Recovery-Tipp:</strong> Leicht verdaulich und nährstoffreich – ideal nach langen Trainingseinheiten oder wenn man sich nicht gut fühlt. Reste halten 2 Tage im Kühlschrank.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -1020,7 +1019,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Traditionell in Salatblättern (Sangchussam) gegessen: Reisblatt + Fleisch + Knoblauch + Gochujang = perfekter Bissen. Mit magerem Schweinefleisch oder Hähnchen kalorienärmer.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 ```
 
@@ -1079,7 +1078,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Wichtig:</strong> Miso nie kochen – die wertvollen Probiotika werden durch Hitze zerstört. Die Suppe immer am Ende bei niedriger Temperatur einrühren.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -1123,7 +1122,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Mirin gibt es im Asialaden oder größeren Supermärkten. Alternativ: 1 TL Zucker + 1 EL Reisessig. Das Ei sollte cremig bleiben – nicht zu lang garen!</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -1168,7 +1167,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Im Sommer besonders erfrischend. Gut im Voraus zubereitet – Nudeln und Belag getrennt aufbewahren und erst kurz vor dem Essen zusammenstellen.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -1210,7 +1209,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Wichtig:</strong> Nur Bio-Eier und innerhalb von 1–2 Tagen nach Kauf verwenden. Der heiße Reis „gart" das Ei leicht an. Wer unsicher ist: Ei 10 Min. bei 65°C im Wasserbad pasteurisieren.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -1254,7 +1253,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Mit Hähnchen oder ganz ohne Fleisch (nur Gemüse + Tofu) genauso lecker. Dunkle Miso-Paste gibt mehr Körper und Umami als helle.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -1298,7 +1297,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Perfektes Frühstück oder leichtes Abendessen. Auch kalt als Brotbox-Füllung sehr gut. Geriebenen Ingwer mitbraten für extra Würze.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -1343,7 +1342,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Hochhitze ist das Geheimnis – das Gemüse soll brutzeln, nicht dünsten. Beliebiges Saison-Gemüse verwenden. Mit Hähnchen oder Tofu zu einer vollständigen Mahlzeit ergänzen.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -1388,7 +1387,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Soba-Tipp:</strong> Buchweizennudeln nach dem Kochen besonders gründlich unter fließendem Wasser abspülen – das entfernt die Stärke und macht sie bissfester. Dressing erst kurz vor dem Essen dazugeben.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -1429,7 +1428,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Der erste Versuch ist fast immer ein bisschen chaotisch – das ist normal! Eine rechteckige Pfanne (Tamagoyaki-Pfanne) macht es leichter. Kalt in der Brotbox genauso lecker.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -1473,7 +1472,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Meal-Prep:</strong> Schmeckt am nächsten Tag noch besser! Für 4 Portionen kochen und im Kühlschrank aufbewahren. Auch mit Hähnchen oder nur Gemüse (z.B. Pilze statt Fleisch) köstlich.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -1515,7 +1514,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Im Sommer das erfrischendste Gericht überhaupt. Weitere leckere Toppings: geraspelter Daikon, Natto, eingelegte Pflaume (Umeboshi), oder Wasabi.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -1559,7 +1558,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Tipp:</strong> Auch ohne Gobo (Klettenwurzel) hervorragend – einfach mehr Karotten nehmen. Hält 4–5 Tage im Kühlschrank, super für Bento-Box oder als Banchan-Beilage.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 ```
 
@@ -1618,7 +1617,7 @@ h1 { font-size: 2rem; }
     </div>
     <div class="tip-box"><strong>Meal-Prep:</strong> Morgens in 15 Min. zubereiten. Hält sich bei Zimmertemperatur 6–8 Stunden gut. Für maximale Frische: Nori erst kurz vor dem Essen wickeln.</div>
   </div>
-  <button class="toggle-btn" onclick="toggleCard(this)">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
 </div>
 
 <div class="recipe-card">
@@ -1638,4 +1637,510 @@ h1 { font-size: 2rem; }
     <div class="details-col-wrap">
       <div>
         <div class="details-label">Zutaten (1 Box)</div>
-        <ul class="ingredient-list
+        <ul class="ingredient-list">
+          <li><span>Reis (gekocht)</span><span class="ing-qty">180 g</span></li>
+          <li><span>Eier</span><span class="ing-qty">2 Stk</span></li>
+          <li><span>Spinat</span><span class="ing-qty">80 g</span></li>
+          <li><span>Karotte</span><span class="ing-qty">½ Stk</span></li>
+          <li><span>Sesamöl</span><span class="ing-qty">1 TL</span></li>
+          <li><span>Sojasauce</span><span class="ing-qty">1 TL</span></li>
+          <li><span>Sesam + Salz</span><span class="ing-qty">je 1 Prise</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="details-label">Zubereitung</div>
+        <ol class="steps-list">
+          <li>Spinat blanchieren, ausdrücken, mit Sesamöl, Soja und Sesam würzen.</li>
+          <li>Karotte in Stifte schneiden und kurz in Öl anbraten, salzen.</li>
+          <li>Eier verquirlen, dünnes Omelett braten, aufrollen und in Scheiben schneiden.</li>
+          <li>Box befüllen: Reis auf eine Seite, Beilagen farblich sortiert daneben.</li>
+          <li>Gochujang optional separat mitgeben als Dip.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="tip-box"><strong>Meal-Prep:</strong> Abends vorbereiten, morgens fertig! Spinat und Karotten halten 2–3 Tage im Kühlschrank – gleich mehr machen.</div>
+  </div>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+</div>
+
+<div class="recipe-card">
+  <div class="card-header">
+    <div class="card-title-group">
+      <div class="card-kana">에너지 볼 · Energy Ball</div>
+      <div class="card-title">Sesam-Matcha Energy Balls</div>
+    </div>
+    <div class="card-badges">
+      <span class="badge badge-time">⏱ 10 Min</span>
+      <span class="badge badge-kcal">~90 kcal / Stk</span>
+      <span class="badge badge-cost">€ günstig</span>
+    </div>
+  </div>
+  <p class="card-desc">No-bake Snack mit Hafer, Sesam und Matcha. Ideal vor oder nach dem Sport – gibt schnell Energie und ist trocken zu transportieren.</p>
+  <div class="card-details">
+    <div class="details-col-wrap">
+      <div>
+        <div class="details-label">Zutaten (12 Stück)</div>
+        <ul class="ingredient-list">
+          <li><span>Haferflocken (zart)</span><span class="ing-qty">150 g</span></li>
+          <li><span>Tahini oder Erdnussmus</span><span class="ing-qty">60 g</span></li>
+          <li><span>Honig oder Agavensirup</span><span class="ing-qty">3 EL</span></li>
+          <li><span>Matcha-Pulver</span><span class="ing-qty">1 TL</span></li>
+          <li><span>Sesam (geröstet)</span><span class="ing-qty">2 EL</span></li>
+          <li><span>Salz</span><span class="ing-qty">1 Prise</span></li>
+          <li><span>Vanille (optional)</span><span class="ing-qty">½ TL</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="details-label">Zubereitung</div>
+        <ol class="steps-list">
+          <li>Alle Zutaten in einer Schüssel gut vermischen.</li>
+          <li>Masse 15 Min. kühl stellen (wird fester und lässt sich besser formen).</li>
+          <li>Mit leicht feuchten Händen walnussgroße Kugeln formen.</li>
+          <li>Optional in Sesam oder Kokosraspeln wälzen.</li>
+          <li>Im Kühlschrank aufbewahren – hält 1 Woche.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="tip-box"><strong>Sport-Snack:</strong> 2–3 Bälle vor dem Training geben gute Energie. Im Kühlschrank 7 Tage haltbar, einfach morgens mitnehmen.</div>
+  </div>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+</div>
+
+<div class="recipe-card">
+  <div class="card-header">
+    <div class="card-title-group">
+      <div class="card-kana">두부 샐러드 · Tofu Saengchae</div>
+      <div class="card-title">Tofu-Edamame Salat</div>
+    </div>
+    <div class="card-badges">
+      <span class="badge badge-time">⏱ 10 Min</span>
+      <span class="badge badge-kcal">~280 kcal</span>
+      <span class="badge badge-cost">€ günstig</span>
+    </div>
+  </div>
+  <p class="card-desc">Kalter Proteinbomben-Salat mit Tofu, Edamame, Gurke und einem würzigen Soja-Sesam-Dressing. Kein Kochen nötig!</p>
+  <div class="card-details">
+    <div class="details-col-wrap">
+      <div>
+        <div class="details-label">Zutaten (1 Box)</div>
+        <ul class="ingredient-list">
+          <li><span>Fester Tofu</span><span class="ing-qty">150 g</span></li>
+          <li><span>Edamame (TK, aufgetaut)</span><span class="ing-qty">80 g</span></li>
+          <li><span>Gurke</span><span class="ing-qty">½ Stk</span></li>
+          <li><span>Karotte</span><span class="ing-qty">½ Stk</span></li>
+          <li><span>Sojasauce</span><span class="ing-qty">1,5 EL</span></li>
+          <li><span>Reisessig</span><span class="ing-qty">1 EL</span></li>
+          <li><span>Sesamöl</span><span class="ing-qty">1 TL</span></li>
+          <li><span>Gochugaru / Chiliflocken</span><span class="ing-qty">½ TL</span></li>
+          <li><span>Sesam</span><span class="ing-qty">1 TL</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="details-label">Zubereitung</div>
+        <ol class="steps-list">
+          <li>Tofu mit Küchenpapier gut ausdrücken und in Würfel schneiden.</li>
+          <li>Gurke halbieren, Kerne herausschaben, in Scheiben schneiden. Karotte grob raffeln.</li>
+          <li>Dressing aus Soja, Essig, Sesamöl und Chili verrühren.</li>
+          <li>Tofu, Edamame, Gurke und Karotte in Box schichten.</li>
+          <li>Dressing separat mitgeben und erst vor dem Essen drüber geben.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="tip-box"><strong>Meal-Prep-Profi:</strong> Dressing separat transportieren verhindert, dass der Salat weich wird. Hält sich 2 Tage vorgekühlt. Für mehr Sättigung: etwas Reis oder Soba-Nudeln dazu.</div>
+  </div>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+</div>
+
+<div class="recipe-card">
+  <div class="card-header">
+    <div class="card-title-group">
+      <div class="card-kana">김밥 · Gimbap</div>
+      <div class="card-title">Koreanische Sushi-Rolle</div>
+    </div>
+    <div class="card-badges">
+      <span class="badge badge-time">⏱ 30 Min</span>
+      <span class="badge badge-kcal">~350 kcal</span>
+      <span class="badge badge-cost">€ günstig</span>
+    </div>
+  </div>
+  <p class="card-desc">Die koreanische Version der Maki-Rolle: Reis mit Gemüse und Ei in Nori gerollt – perfekt für die Brotbox, kein Roher Fisch nötig!</p>
+  <div class="card-details">
+    <div class="details-col-wrap">
+      <div>
+        <div class="details-label">Zutaten (2 Rollen)</div>
+        <ul class="ingredient-list">
+          <li><span>Gekochter Reis (warm)</span><span class="ing-qty">300 g</span></li>
+          <li><span>Nori-Blätter</span><span class="ing-qty">2 Stk</span></li>
+          <li><span>Eier</span><span class="ing-qty">2 Stk</span></li>
+          <li><span>Karotte (in Streifen)</span><span class="ing-qty">1 Stk</span></li>
+          <li><span>Gurke (in Streifen)</span><span class="ing-qty">½ Stk</span></li>
+          <li><span>Spinat (blanchiert)</span><span class="ing-qty">60 g</span></li>
+          <li><span>Sesamöl + Salz</span><span class="ing-qty">je 1 TL</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="details-label">Zubereitung</div>
+        <ol class="steps-list">
+          <li>Reis mit Sesamöl und Salz vermischen und abkühlen lassen.</li>
+          <li>Eier als Streifen-Omelett braten, Karotten in Öl anbraten, Spinat würzen.</li>
+          <li>Nori auf eine Bambusmatte legen, Reis dünn darauf verteilen (Rand lassen).</li>
+          <li>Füllung in einer Reihe auf den Reis legen, fest aufrollen.</li>
+          <li>Mit angefeuchtetem Messer in Scheiben schneiden.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="tip-box"><strong>Tipp:</strong> Fest rollen ist das Geheimnis – sonst fällt alles auseinander. Sesamöl auf die fertige Rolle streichen macht sie glänzend und verhindert, dass Nori klebt. Beliebige Füllungen möglich!</div>
+  </div>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+</div>
+
+<div class="recipe-card">
+  <div class="card-header">
+    <div class="card-title-group">
+      <div class="card-kana">冷製パスタ · Soba-Nudel-Box</div>
+      <div class="card-title">Soba-Nudeln mit Erdnuss-Sauce</div>
+    </div>
+    <div class="card-badges">
+      <span class="badge badge-time">⏱ 15 Min</span>
+      <span class="badge badge-kcal">~420 kcal</span>
+      <span class="badge badge-cost">€ günstig</span>
+    </div>
+  </div>
+  <p class="card-desc">Buchweizennudeln mit einer cremigen Erdnuss-Soja-Sauce und knackigem Gemüse. Sättigend, nussig und perfekt für die Arbeit.</p>
+  <div class="card-details">
+    <div class="details-col-wrap">
+      <div>
+        <div class="details-label">Zutaten (1 Box)</div>
+        <ul class="ingredient-list">
+          <li><span>Soba-Nudeln</span><span class="ing-qty">80 g</span></li>
+          <li><span>Erdnussmus</span><span class="ing-qty">2 EL</span></li>
+          <li><span>Sojasauce</span><span class="ing-qty">1 EL</span></li>
+          <li><span>Reisessig</span><span class="ing-qty">1 EL</span></li>
+          <li><span>Sesamöl</span><span class="ing-qty">1 TL</span></li>
+          <li><span>Knoblauch (gerieben)</span><span class="ing-qty">½ Zehe</span></li>
+          <li><span>Gurke + Karotte + Edamame</span><span class="ing-qty">je 40 g</span></li>
+          <li><span>Sesam + Chiliflocken</span><span class="ing-qty">nach Belieben</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="details-label">Zubereitung</div>
+        <ol class="steps-list">
+          <li>Soba kochen, kalt abschrecken, mit wenig Sesamöl vermischen.</li>
+          <li>Sauce: Erdnussmus, Soja, Essig, Sesamöl und Knoblauch verrühren. Falls zu dick: 1–2 EL Wasser dazu.</li>
+          <li>Gemüse in Streifen schneiden.</li>
+          <li>Nudeln in die Box, Gemüse dazu, Sauce separat in kleines Behältnis.</li>
+          <li>Vor dem Essen Sauce dazugeben und gut vermischen.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="tip-box"><strong>Meal-Prep:</strong> Nudeln und Gemüse halten 2 Tage. Sauce immer separat, sonst werden die Nudeln matschig. Wer es schärfer mag: etwas Gochujang in die Sauce mischen.</div>
+  </div>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+</div>
+
+<div class="recipe-card">
+  <div class="card-header">
+    <div class="card-title-group">
+      <div class="card-kana">味噌マフィン · Miso-Hafer-Muffins</div>
+      <div class="card-title">Herzhafte Miso-Hafer-Muffins</div>
+    </div>
+    <div class="card-badges">
+      <span class="badge badge-time">⏱ 25 Min</span>
+      <span class="badge badge-kcal">~180 kcal / Stk</span>
+      <span class="badge badge-cost">€ günstig</span>
+    </div>
+  </div>
+  <p class="card-desc">Herzhafte Muffins mit Miso, Haferflocken und Frühlingszwiebeln – ungewöhnlich, aber absolut lecker als Snack oder Frühstück to-go.</p>
+  <div class="card-details">
+    <div class="details-col-wrap">
+      <div>
+        <div class="details-label">Zutaten (6 Muffins)</div>
+        <ul class="ingredient-list">
+          <li><span>Haferflocken</span><span class="ing-qty">100 g</span></li>
+          <li><span>Mehl</span><span class="ing-qty">80 g</span></li>
+          <li><span>Ei</span><span class="ing-qty">1 Stk</span></li>
+          <li><span>Miso-Paste</span><span class="ing-qty">1,5 EL</span></li>
+          <li><span>Milch oder Hafermilch</span><span class="ing-qty">120 ml</span></li>
+          <li><span>Öl</span><span class="ing-qty">2 EL</span></li>
+          <li><span>Frühlingszwiebeln</span><span class="ing-qty">3 Stk</span></li>
+          <li><span>Backpulver</span><span class="ing-qty">1 TL</span></li>
+          <li><span>Sesam</span><span class="ing-qty">1 EL</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="details-label">Zubereitung</div>
+        <ol class="steps-list">
+          <li>Ofen auf 180°C vorheizen. Miso in Milch auflösen.</li>
+          <li>Ei und Öl in die Miso-Milch quirlen.</li>
+          <li>Haferflocken, Mehl und Backpulver vermischen, nasse Zutaten einrühren.</li>
+          <li>Frühlingszwiebeln und Sesam unterheben.</li>
+          <li>In Muffinform füllen, 18–20 Min. backen bis goldbraun.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="tip-box"><strong>Meal-Prep:</strong> Sonntags backen, 5 Tage morgens zum Frühstück oder als Snack mitnehmen. Eingefroren halten sie 1 Monat – einfach über Nacht auftauen.</div>
+  </div>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+</div>
+
+<div class="recipe-card">
+  <div class="card-header">
+    <div class="card-title-group">
+      <div class="card-kana">계란 롤 · Gyeran Roll</div>
+      <div class="card-title">Koreanische Ei-Wraps</div>
+    </div>
+    <div class="card-badges">
+      <span class="badge badge-time">⏱ 15 Min</span>
+      <span class="badge badge-kcal">~290 kcal</span>
+      <span class="badge badge-cost">€ sehr günstig</span>
+    </div>
+  </div>
+  <p class="card-desc">Dünne Eier-Wraps gefüllt mit Reis, Kimchi und Gemüse – low-carb-freundlich, glutenfrei und sehr leicht zu transportieren.</p>
+  <div class="card-details">
+    <div class="details-col-wrap">
+      <div>
+        <div class="details-label">Zutaten (2 Wraps)</div>
+        <ul class="ingredient-list">
+          <li><span>Eier</span><span class="ing-qty">4 Stk</span></li>
+          <li><span>Reis (oder Blumenkohl-Reis)</span><span class="ing-qty">100 g</span></li>
+          <li><span>Kimchi (gehackt)</span><span class="ing-qty">40 g</span></li>
+          <li><span>Karotte (geraspelt)</span><span class="ing-qty">½ Stk</span></li>
+          <li><span>Avocado</span><span class="ing-qty">½ Stk</span></li>
+          <li><span>Sojasauce</span><span class="ing-qty">1 TL</span></li>
+          <li><span>Sesamöl + Salz</span><span class="ing-qty">je 1 Prise</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="details-label">Zubereitung</div>
+        <ol class="steps-list">
+          <li>Eier verquirlen, mit einer Prise Salz würzen.</li>
+          <li>In beschichteter Pfanne sehr dünnes Omelett braten (wie einen Pfannkuchen).</li>
+          <li>Reis mit Soja und Sesamöl würzen, Kimchi und Karotte untermischen.</li>
+          <li>Omelett mit Reismischung und Avocado belegen.</li>
+          <li>Fest aufrollen, halbieren – ggf. mit Zahnstocher fixieren.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="tip-box"><strong>Low-Carb-Option:</strong> Reis durch Blumenkohl-Reis ersetzen für eine noch leichtere Variante. Hält sich 1 Tag im Kühlschrank – morgens vorbereiten und mittags essen.</div>
+  </div>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+</div>
+
+<div class="recipe-card">
+  <div class="card-header">
+    <div class="card-title-group">
+      <div class="card-kana">枝豆フムス · Edamame Hummus</div>
+      <div class="card-title">Edamame-Hummus mit Gemüse-Sticks</div>
+    </div>
+    <div class="card-badges">
+      <span class="badge badge-time">⏱ 10 Min</span>
+      <span class="badge badge-kcal">~200 kcal</span>
+      <span class="badge badge-cost">€ günstig</span>
+    </div>
+  </div>
+  <p class="card-desc">Cremiger Edamame-Dip mit Sesamöl und Miso – japanisch-inspirierte Version des Klassikers. Mit Gurken, Karotten und Paprika als Dipper.</p>
+  <div class="card-details">
+    <div class="details-col-wrap">
+      <div>
+        <div class="details-label">Zutaten (1 Box)</div>
+        <ul class="ingredient-list">
+          <li><span>Edamame (TK, aufgetaut)</span><span class="ing-qty">150 g</span></li>
+          <li><span>Tahini oder Sesammus</span><span class="ing-qty">1 EL</span></li>
+          <li><span>Miso-Paste</span><span class="ing-qty">1 TL</span></li>
+          <li><span>Zitronensaft</span><span class="ing-qty">1 EL</span></li>
+          <li><span>Knoblauch</span><span class="ing-qty">1 Zehe</span></li>
+          <li><span>Sesamöl</span><span class="ing-qty">1 TL</span></li>
+          <li><span>Wasser</span><span class="ing-qty">2–3 EL</span></li>
+          <li><span>Gurke, Karotte, Paprika (Sticks)</span><span class="ing-qty">je ½ Stk</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="details-label">Zubereitung</div>
+        <ol class="steps-list">
+          <li>Edamame, Tahini, Miso, Zitronensaft und Knoblauch in einen Mixer geben.</li>
+          <li>Wasser löffelweise dazugeben und pürieren bis cremig.</li>
+          <li>Mit Sesamöl abschmecken, salzen falls nötig.</li>
+          <li>Gemüse in Sticks schneiden.</li>
+          <li>Hummus in kleines Behältnis, Gemüse daneben in die Box.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="tip-box"><strong>Meal-Prep:</strong> Hummus hält 4 Tage im Kühlschrank. Gleich eine größere Portion machen! Als Brotaufstrich, Dip oder Sauce zu Reis ebenfalls sehr gut.</div>
+  </div>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+</div>
+
+<div class="recipe-card">
+  <div class="card-header">
+    <div class="card-title-group">
+      <div class="card-kana">냉모밀 · Naengmomil</div>
+      <div class="card-title">Kalte Nudel-Box mit Dipping-Sauce</div>
+    </div>
+    <div class="card-badges">
+      <span class="badge badge-time">⏱ 15 Min</span>
+      <span class="badge badge-kcal">~310 kcal</span>
+      <span class="badge badge-cost">€ günstig</span>
+    </div>
+  </div>
+  <p class="card-desc">Kalte Buchweizennudeln mit Tsuyu-Dipping-Sauce und frischen Toppings – erfrischend, leicht und an heißen Tagen perfekt.</p>
+  <div class="card-details">
+    <div class="details-col-wrap">
+      <div>
+        <div class="details-label">Zutaten (1 Box)</div>
+        <ul class="ingredient-list">
+          <li><span>Soba-Nudeln</span><span class="ing-qty">80 g</span></li>
+          <li><span>Sojasauce</span><span class="ing-qty">2 EL</span></li>
+          <li><span>Mirin</span><span class="ing-qty">2 EL</span></li>
+          <li><span>Dashi oder Wasser</span><span class="ing-qty">60 ml</span></li>
+          <li><span>Frischer Ingwer</span><span class="ing-qty">1 TL</span></li>
+          <li><span>Frühlingszwiebeln</span><span class="ing-qty">1 Stk</span></li>
+          <li><span>Nori (in Streifen)</span><span class="ing-qty">½ Blatt</span></li>
+          <li><span>Sesam</span><span class="ing-qty">1 TL</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="details-label">Zubereitung</div>
+        <ol class="steps-list">
+          <li>Soba kochen, kalt abschrecken, mit wenig Öl vermischen damit sie nicht kleben.</li>
+          <li>Sauce: Soja, Mirin und Dashi kurz aufkochen, abkühlen lassen.</li>
+          <li>Nudeln in Box geben, Nori und Frühlingszwiebeln darüber.</li>
+          <li>Sauce separat in kleines Gefäß.</li>
+          <li>Vor dem Essen: Nudeln in die Sauce tauchen – Stück für Stück.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="tip-box"><strong>Tipp:</strong> Die Sauce (Mentsuyu) gibt es auch fertig im Asialaden – einfach mit Wasser verdünnen. Wasabi und geraspelter Daikon sind klassische Beilagen.</div>
+  </div>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+</div>
+
+<div class="recipe-card">
+  <div class="card-header">
+    <div class="card-title-group">
+      <div class="card-kana">두부 스크램블 · Tofu Scramble</div>
+      <div class="card-title">Tofu-Scramble Wrap</div>
+    </div>
+    <div class="card-badges">
+      <span class="badge badge-time">⏱ 15 Min</span>
+      <span class="badge badge-kcal">~340 kcal</span>
+      <span class="badge badge-cost">€ günstig</span>
+    </div>
+  </div>
+  <p class="card-desc">Würziges Tofu-Scramble mit Gochujang in einem Tortilla-Wrap oder Reispapier. Vegan, proteinreich und mega-einfach vorzubereiten.</p>
+  <div class="card-details">
+    <div class="details-col-wrap">
+      <div>
+        <div class="details-label">Zutaten (1 Wrap)</div>
+        <ul class="ingredient-list">
+          <li><span>Fester Tofu</span><span class="ing-qty">150 g</span></li>
+          <li><span>Großer Wrap oder Tortilla</span><span class="ing-qty">1 Stk</span></li>
+          <li><span>Paprika</span><span class="ing-qty">½ Stk</span></li>
+          <li><span>Frühlingszwiebeln</span><span class="ing-qty">2 Stk</span></li>
+          <li><span>Gochujang</span><span class="ing-qty">1 TL</span></li>
+          <li><span>Sojasauce</span><span class="ing-qty">1 TL</span></li>
+          <li><span>Kurkuma</span><span class="ing-qty">½ TL</span></li>
+          <li><span>Avocado oder Gurkenscheiben</span><span class="ing-qty">nach Belieben</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="details-label">Zubereitung</div>
+        <ol class="steps-list">
+          <li>Tofu ausdrücken und grob krümeln.</li>
+          <li>Öl erhitzen, Paprika kurz anbraten.</li>
+          <li>Tofu dazugeben, mit Kurkuma, Soja und Gochujang würzen – 5 Min. braten.</li>
+          <li>Frühlingszwiebeln einrühren, abkühlen lassen.</li>
+          <li>Auf Wrap geben, Avocado oder Gurke dazu, fest aufrollen und in Folie wickeln.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="tip-box"><strong>Vegan & sättigend:</strong> Kurkuma gibt dem Tofu eine appetitliche gelbe Farbe (und ist super anti-entzündlich!). Gochujang gibt Schärfe und Würze. Hält sich bis zu 1 Tag gekühlt.</div>
+  </div>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+</div>
+
+<div class="recipe-card">
+  <div class="card-header">
+    <div class="card-title-group">
+      <div class="card-kana">抹茶ヨーグルト · Matcha Joghurt</div>
+      <div class="card-title">Matcha-Joghurt mit Granola</div>
+    </div>
+    <div class="card-badges">
+      <span class="badge badge-time">⏱ 5 Min</span>
+      <span class="badge badge-kcal">~240 kcal</span>
+      <span class="badge badge-cost">€ günstig</span>
+    </div>
+  </div>
+  <p class="card-desc">Cremiger griechischer Joghurt mit Matcha und Honig, getoppt mit Granola – der japanisch-inspirierte Snack für zwischendurch oder als Dessert.</p>
+  <div class="card-details">
+    <div class="details-col-wrap">
+      <div>
+        <div class="details-label">Zutaten (1 Box)</div>
+        <ul class="ingredient-list">
+          <li><span>Griechischer Joghurt (10%)</span><span class="ing-qty">150 g</span></li>
+          <li><span>Matcha-Pulver</span><span class="ing-qty">1 TL</span></li>
+          <li><span>Honig oder Agavensirup</span><span class="ing-qty">1 EL</span></li>
+          <li><span>Granola</span><span class="ing-qty">30 g</span></li>
+          <li><span>Frische Beeren oder Mango (optional)</span><span class="ing-qty">nach Belieben</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="details-label">Zubereitung</div>
+        <ol class="steps-list">
+          <li>Matcha mit 1 TL heißem Wasser verrühren bis klumpenfrei.</li>
+          <li>Matcha-Paste mit Joghurt und Honig vermischen.</li>
+          <li>In eine kleine Box füllen.</li>
+          <li>Granola und Früchte separat mitgeben (damit es nicht durchweicht).</li>
+          <li>Erst kurz vor dem Essen alles zusammenstellen.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="tip-box"><strong>Sport-Snack:</strong> Reich an Protein durch Joghurt, Antioxidantien durch Matcha. Granola immer separat transportieren – sonst wird es matschig. Auch als Pre-Workout-Snack mit Banane super.</div>
+  </div>
+  <button class="toggle-btn" data-toggle="recipe">Rezept anzeigen <span class="toggle-icon">▼</span></button>
+</div>
+```
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-kana">食 · 健</div>
+  <div class="footer-text">Gesund essen · Gut leben · 건강하게 먹자</div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    // Tab switching
+    document.querySelectorAll('.tab-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var id = btn.getAttribute('data-tab');
+        document.querySelectorAll('.category-section').forEach(function(s) {
+          s.classList.remove('visible');
+        });
+        document.querySelectorAll('.tab-btn').forEach(function(b) {
+          b.classList.remove('active');
+        });
+        document.getElementById(id).classList.add('visible');
+        btn.classList.add('active');
+      });
+    });
+
+    // Recipe card toggle
+    document.querySelectorAll('[data-toggle="recipe"]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var card = btn.closest('.recipe-card');
+        var details = card.querySelector('.card-details');
+        var isOpen = details.classList.contains('open');
+        details.classList.toggle('open');
+        btn.innerHTML = isOpen
+          ? 'Rezept anzeigen <span class="toggle-icon">▼</span>'
+          : 'Rezept schließen <span class="toggle-icon rotated">▼</span>';
+      });
+    });
+
+  });
+</script>
+
+</body>
+</html>
